@@ -8,6 +8,7 @@ adhoc_communication
 nav_msgs
 roscpp
 message_generation
+opencv2_catkin
 )
 set(CMAKE_BUILD_TYPE Debug)
 ## System dependencies are found with CMake's conventions
@@ -94,7 +95,7 @@ ${catkin_INCLUDE_DIRS}
 # )
 ## Declare a cpp executable
 # add_executable(map_merger_node src/map_merger_node.cpp)
-find_package(OpenCV REQUIRED)
+find_package(OpenCV 2 REQUIRED)
 add_executable(map_merger src/main.cpp src/mapmerger.cpp src/mapmerger.h src/mapstitch.h src/mapstitch.cpp src/updateentry.cpp src/updateentry.h src/updatemanager.cpp src/updatemanager.h )
 target_link_libraries(map_merger ${OpenCV_LIBS} ${catkin_LIBRARIES} )
 ## Add cmake target dependencies of the executable/library

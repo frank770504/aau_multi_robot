@@ -13,6 +13,7 @@ tf
 costmap_2d 
 navfn 
 adhoc_communication 
+base_local_planner
 map_merger)
 
 ## System dependencies are found with CMake's conventions

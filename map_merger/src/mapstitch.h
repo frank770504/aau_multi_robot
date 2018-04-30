@@ -3,7 +3,10 @@
 
 #include <stdio.h>
 #include <math.h>
-#include <opencv/cv.h>
+//~ #include <opencv/cv.h>
+#include "opencv2/imgproc/imgproc.hpp"
+#include "opencv2/opencv.hpp"
+#include "opencv2/features2d/features2d.hpp"
 #include "ros/ros.h"
 #include "ros/console.h"
 using namespace cv;
